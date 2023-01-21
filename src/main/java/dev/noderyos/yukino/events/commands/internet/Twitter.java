@@ -17,9 +17,9 @@ public class Twitter {
         this.cb = new ConfigurationBuilder();
         cb.setDebugEnabled(true)
                 .setOAuthConsumerKey(c.get("TwitterOAuthConsumerKey"))
-                .setOAuthConsumerSecret(c.get("InfosBot.TwitterOAuthConsumerSecret"))
-                .setOAuthAccessToken(c.get("InfosBot.TwitterOAuthAccessToken"))
-                .setOAuthAccessTokenSecret(c.get("InfosBot.TwitterOAuthAccessTokenSecret"));
+                .setOAuthConsumerSecret(c.get("TwitterOAuthConsumerSecret"))
+                .setOAuthAccessToken(c.get("TwitterOAuthAccessToken"))
+                .setOAuthAccessTokenSecret(c.get("TwitterOAuthAccessTokenSecret"));
         this.tf = new TwitterFactory(cb.build());
         this.twitter = tf.getInstance();
 
